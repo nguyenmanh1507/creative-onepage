@@ -1,6 +1,48 @@
 /*------------------------------------------------------------------
 Porfolio
 */
+.portfolio {
+
+	.column + .column:last-child, 
+	.columns + .columns:last-child {
+		float: left;
+	}
+
+	figure {
+		margin: 0;
+		max-width: 377px;
+		width: 100%;
+		margin: 0 auto 7%;
+		position: relative;
+		transition: all .3s ease-in;
+
+		&:hover {
+
+			&:after {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background-color: rgba(0, 0, 0, .5);
+			}
+		}
+
+		> a {
+			display: block;
+		}
+
+		figcaption {
+			position: absolute;
+			left: 0;
+			top: 50%;
+			width: 100%;
+			text-align: center;
+			opacity: 0;
+		}
+	}
+}
 
 .big-intro {
 	background-color: $smoke;
@@ -19,5 +61,47 @@ Porfolio
 			width: 50%;
 		}
 		
+	}
+}
+
+// Our work
+.filter-control {
+	margin-bottom: em(40);
+
+	button {
+		padding: 0;
+		background: none;
+		color: $oil;
+		font-family: $font-family-serif;
+		font-size: 14px;
+		font-style: italic;
+		margin-right: 1.25rem;
+		transition: color .3s ease-in;
+
+		&:active,
+		&:focus {
+			outline: none;
+		}
+
+		&.active,
+		&:hover {
+			color: $secondary-color;
+		}
+
+		&:after {
+			font-family: 'FontAwesome';
+			content: '\f069';
+			margin-left: 20px;
+			font-size: 8px;
+			color: $oil;
+		}
+
+		&:last-child {
+			margin-right: 0;
+
+			&:after {
+				content: '';
+			}
+		}
 	}
 }

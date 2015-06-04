@@ -6303,6 +6303,33 @@ About Us
 /*------------------------------------------------------------------
 Porfolio
 */
+.portfolio .column + .column:last-child, .portfolio .columns + .columns:last-child {
+  float: left; }
+.portfolio figure {
+  margin: 0;
+  max-width: 377px;
+  width: 100%;
+  margin: 0 auto 7%;
+  position: relative;
+  transition: all .3s ease-in; }
+  .portfolio figure:hover:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); }
+  .portfolio figure > a {
+    display: block; }
+  .portfolio figure figcaption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    opacity: 0; }
+
 .big-intro {
   background-color: #EEEEEE; }
   .big-intro .big-intro__heading {
@@ -6314,6 +6341,32 @@ Porfolio
       color: #868585;
       margin: 0 auto;
       width: 50%; } }
+
+.filter-control {
+  margin-bottom: 2.5em; }
+  .filter-control button {
+    padding: 0;
+    background: none;
+    color: #333333;
+    font-family: "Roboto Slab", Cambria, "Times New Roman", Times, serif;
+    font-size: 14px;
+    font-style: italic;
+    margin-right: 1.25rem;
+    transition: color .3s ease-in; }
+    .filter-control button:active, .filter-control button:focus {
+      outline: none; }
+    .filter-control button.active, .filter-control button:hover {
+      color: #dd374d; }
+    .filter-control button:after {
+      font-family: 'FontAwesome';
+      content: '\f069';
+      margin-left: 20px;
+      font-size: 8px;
+      color: #333333; }
+    .filter-control button:last-child {
+      margin-right: 0; }
+      .filter-control button:last-child:after {
+        content: ''; }
 
 /*------------------------------------------------------------------
 Main Navigation

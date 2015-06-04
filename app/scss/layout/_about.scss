@@ -1,0 +1,111 @@
+/*------------------------------------------------------------------
+About Us
+*/
+
+.about {
+	background-color: $white;
+}
+
+.about-wwd__heading,
+.about-wwd__list {
+	font-size: 1.875rem; //30px
+	text-transform: uppercase;
+	margin: 0 0 em(20);
+	font-weight: 700;
+}
+
+// .tabs {
+// 	// border: 1px solid $steel;
+// 	// border-bottom: none;
+// }
+
+.tabs dd, 
+.tabs .tab-title {
+	width: 33.33%;
+	text-align: center;
+	border: 1px solid $steel;
+	border-right: none;
+
+	&:last-child {
+		border-right: 1px solid $steel;
+	}
+
+	&.active {
+		border-top: 1px solid $secondary-color;
+		border-bottom: none;
+			
+		a {
+			box-shadow: inset 0 4px 0 $secondary-color;
+		}
+	}
+}
+
+.tabs dd > a, 
+.tabs .tab-title > a {
+	background-color: $white;
+}
+
+.tabs-content {
+	border: 1px solid $steel;
+	border-top: none;
+	padding: 30px 10px;
+	color: $steel;
+
+	.about-wwd__excerpt {
+		font-size: 0.875rem; //14px
+	}
+
+	.inline-list {
+		text-align: center;
+		margin-bottom: 0;
+
+		li {
+			display: inline-block;
+			float: none;
+			margin: 0;
+			padding: 1.875rem; //30px;
+			padding-bottom: 0;
+
+			a {
+				background-color: $smoke;
+				color: $secondary-color;
+				border-radius: 50%;
+				font-size: 40px;
+				display: block;
+				line-height: 100px;
+				height: 100px;
+				width: 100px;
+				margin: 0 auto 40px;
+				transition: all .3s ease-in;
+
+				&:hover {
+					background-color: $secondary-color;
+					color: $white;
+				}
+			}
+
+			p {
+				margin: 0;
+			}
+		}
+	}
+} 
+
+.about-specs {
+
+	.about-specs__skill {
+		font-size: 0.875rem; //14px
+		margin-bottom: 1.875rem; //30px
+	}
+
+	p {
+		color: $steel;
+		font-size: 0.875rem; //14px
+		margin-bottom: 2.5rem; //40px
+	}
+
+	.progress {
+		height: 4px;
+		padding: 0;
+	}
+}

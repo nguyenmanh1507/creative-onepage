@@ -1,0 +1,71 @@
+/*------------------------------------------------------------------
+Site Services
+*/
+
+.site-services {
+	background: $oil url(../images/services.jpg) no-repeat left top;
+	background-blend-mode: multiply;
+	background-size: cover;
+	color: $white;
+}
+
+.site-services__item {
+	margin: 0 0 em(40); 
+
+	> a {
+		border-radius: 50%;
+		border: 3px solid $white;
+		color: $white;
+		display: block;
+		margin: 0 auto;
+		line-height: 120px;
+		width: 120px;
+		height: 120px;
+		font-size: 55px;
+	}
+
+	.site-services__item__heading {
+		color: $white;
+		font-size: 1.5rem; //24px
+		margin: 2rem 0; //32px
+		text-transform: uppercase;
+	}
+
+	.site-services__item__excerpt {
+		font-size: 0.8125rem; //13px
+	}
+}
+
+.site-services__blockquote {
+	margin-top: 3.75rem; //60px
+
+	> .fa {
+		color: $secondary-color;
+		font-size: 2.5rem;
+		margin-bottom: em(20);
+	}
+
+	blockquote {
+		width: 100%;
+		color: $white;
+		border-left: 0;
+		font-size: 1.125rem; //18px
+
+		cite {
+			font-size: 1.25rem; //20px
+			color: $white;
+			margin-top: em(20);
+
+			span {
+				display: block;
+				font-size: 0.875rem; //14px
+			}
+		}
+
+		@media screen and (min-width: 40.063em) {
+			width: 80%;	
+			margin: 0 auto;
+		}		
+	}
+
+}

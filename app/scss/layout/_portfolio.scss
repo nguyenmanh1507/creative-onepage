@@ -1,0 +1,23 @@
+/*------------------------------------------------------------------
+Porfolio
+*/
+
+.big-intro {
+	background-color: $smoke;
+
+	.big-intro__heading {
+		font-size: 1.875rem; //30px
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+	@media only screen and (min-width: 40.063em) {
+
+		p {
+			color: $steel;
+			margin: 0 auto;
+			width: 50%;
+		}
+		
+	}
+}

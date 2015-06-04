@@ -3289,7 +3289,7 @@ label.error {
   right: 1.0625rem; }
 
 .joyride-timer-indicator {
-  background: #666666;
+  background: #868585;
   display: block;
   height: inherit;
   width: 0; }
@@ -3921,7 +3921,7 @@ ul.pagination {
   left: 0;
   background-color: #FFFFFF;
   padding: 1.875rem;
-  border: solid 1px #666666;
+  border: solid 1px #868585;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); }
   @media only screen and (max-width: 40em) {
     .reveal-modal {
@@ -6119,6 +6119,9 @@ th.hide-for-touch {
 html, body {
   height: 100%; }
 
+a {
+  outline: none; }
+
 .portfolio .mix {
   display: none; }
 
@@ -6158,6 +6161,161 @@ Header layout
   font-size: 3.125em; }
 
 /*------------------------------------------------------------------
+Intro Section
+*/
+.site-intro {
+  background: #FFFFFF;
+  color: #333333; }
+  .site-intro .site-intro__heading {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    margin: 0 0 4.375rem; }
+    .site-intro .site-intro__heading span {
+      color: #ff9900; }
+  .site-intro .site-intro__description {
+    font-size: 0.88rem;
+    margin: 0; }
+
+/*------------------------------------------------------------------
+Site Services
+*/
+.site-services {
+  background: #333333 url(../images/services.jpg) no-repeat left top;
+  background-blend-mode: multiply;
+  background-size: cover;
+  color: #FFFFFF; }
+
+.site-services__item {
+  margin: 0 0 2.5em; }
+  .site-services__item > a {
+    border-radius: 50%;
+    border: 3px solid #FFFFFF;
+    color: #FFFFFF;
+    display: block;
+    margin: 0 auto;
+    line-height: 120px;
+    width: 120px;
+    height: 120px;
+    font-size: 55px; }
+  .site-services__item .site-services__item__heading {
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    margin: 2rem 0;
+    text-transform: uppercase; }
+  .site-services__item .site-services__item__excerpt {
+    font-size: 0.8125rem; }
+
+.site-services__blockquote {
+  margin-top: 3.75rem; }
+  .site-services__blockquote > .fa {
+    color: #dd374d;
+    font-size: 2.5rem;
+    margin-bottom: 1.25em; }
+  .site-services__blockquote blockquote {
+    width: 100%;
+    color: #FFFFFF;
+    border-left: 0;
+    font-size: 1.125rem; }
+    .site-services__blockquote blockquote cite {
+      font-size: 1.25rem;
+      color: #FFFFFF;
+      margin-top: 1.25em; }
+      .site-services__blockquote blockquote cite span {
+        display: block;
+        font-size: 0.875rem; }
+    @media screen and (min-width: 40.063em) {
+      .site-services__blockquote blockquote {
+        width: 80%;
+        margin: 0 auto; } }
+
+/*------------------------------------------------------------------
+About Us
+*/
+.about {
+  background-color: #FFFFFF; }
+
+.about-wwd__heading, .about-wwd__list {
+  font-size: 1.875rem;
+  text-transform: uppercase;
+  margin: 0 0 1.25em;
+  font-weight: 700; }
+
+.tabs dd, .tabs .tab-title {
+  width: 33.33%;
+  text-align: center;
+  border: 1px solid #868585;
+  border-right: none; }
+  .tabs dd:last-child, .tabs .tab-title:last-child {
+    border-right: 1px solid #868585; }
+  .tabs dd.active, .tabs .tab-title.active {
+    border-top: 1px solid #dd374d;
+    border-bottom: none; }
+    .tabs dd.active a, .tabs .tab-title.active a {
+      box-shadow: inset 0 4px 0 #dd374d; }
+
+.tabs dd > a, .tabs .tab-title > a {
+  background-color: #FFFFFF; }
+
+.tabs-content {
+  border: 1px solid #868585;
+  border-top: none;
+  padding: 30px 10px;
+  color: #868585; }
+  .tabs-content .about-wwd__excerpt {
+    font-size: 0.875rem; }
+  .tabs-content .inline-list {
+    text-align: center;
+    margin-bottom: 0; }
+    .tabs-content .inline-list li {
+      display: inline-block;
+      float: none;
+      margin: 0;
+      padding: 1.875rem;
+      padding-bottom: 0; }
+      .tabs-content .inline-list li a {
+        background-color: #EEEEEE;
+        color: #dd374d;
+        border-radius: 50%;
+        font-size: 40px;
+        display: block;
+        line-height: 100px;
+        height: 100px;
+        width: 100px;
+        margin: 0 auto 40px;
+        transition: all .3s ease-in; }
+        .tabs-content .inline-list li a:hover {
+          background-color: #dd374d;
+          color: #FFFFFF; }
+      .tabs-content .inline-list li p {
+        margin: 0; }
+
+.about-specs .about-specs__skill {
+  font-size: 0.875rem;
+  margin-bottom: 1.875rem; }
+.about-specs p {
+  color: #868585;
+  font-size: 0.875rem;
+  margin-bottom: 2.5rem; }
+.about-specs .progress {
+  height: 4px;
+  padding: 0; }
+
+/*------------------------------------------------------------------
+Porfolio
+*/
+.big-intro {
+  background-color: #EEEEEE; }
+  .big-intro .big-intro__heading {
+    font-size: 1.875rem;
+    font-weight: 700;
+    text-transform: uppercase; }
+  @media only screen and (min-width: 40.063em) {
+    .big-intro p {
+      color: #868585;
+      margin: 0 auto;
+      width: 50%; } }
+
+/*------------------------------------------------------------------
 Main Navigation
 */
 .top-bar-section ul li {
@@ -6176,3 +6334,38 @@ Main Navigation
   .top-bar-section li.active:not(.has-form) a:not(.button), .top-bar-section li:not(.has-form) a:not(.button) {
     padding-top: 2em;
     text-transform: uppercase; } }
+
+/*------------------------------------------------------------------
+MISC
+*/
+.site-hr {
+  border-radius: 50%;
+  border: 1px solid #FFFFFF;
+  line-height: 22px;
+  font-size: 11px;
+  margin: 0 auto;
+  position: relative;
+  height: 22px;
+  width: 21px; }
+  .site-hr.site-hr--a {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    color: #dd374d; }
+  .site-hr.site-hr--b {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    border-color: #d8d8d8;
+    color: #dd374d; }
+    .site-hr.site-hr--b:before, .site-hr.site-hr--b:after {
+      background-color: #d8d8d8; }
+  .site-hr:before, .site-hr:after {
+    content: '';
+    height: 1px;
+    width: 400px;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 50%; }
+  .site-hr:before {
+    left: 30px; }
+  .site-hr:after {
+    right: 30px; }

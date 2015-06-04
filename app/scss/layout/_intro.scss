@@ -1,0 +1,24 @@
+/*------------------------------------------------------------------
+Intro Section
+*/
+
+.site-intro {
+	background: $white;
+	color: $oil;
+
+	.site-intro__heading {
+		font-size: em(40);
+		text-transform: uppercase;
+		margin: 0 0 4.375rem; //70px
+
+		span {
+			color: $primary-color;
+		}
+
+	}
+
+	.site-intro__description {
+		font-size: 0.88rem; //14px
+		margin: 0;
+	}
+}

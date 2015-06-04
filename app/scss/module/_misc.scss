@@ -1,0 +1,51 @@
+/*------------------------------------------------------------------
+MISC
+*/
+
+// Horizontal
+.site-hr {
+	border-radius: 50%;
+	border: 1px solid $white;
+	line-height: 22px;
+	font-size: 11px;
+	margin: 0 auto;
+	position: relative;
+	height: 22px;
+	width: 21px;
+
+	&.site-hr--a {
+		margin-top: 1.25rem; //20px
+		margin-bottom: 1.25rem;
+		color: $secondary-color;
+	}
+
+	&.site-hr--b {
+		margin-top: 1.25rem; //20px
+		margin-bottom: 1.25rem; //20px
+		border-color: #d8d8d8;
+		color: $secondary-color;
+
+		&:before,
+		&:after {
+			background-color: #d8d8d8;
+		}
+	}
+
+	&:before,
+	&:after {
+		content: '';
+		height: 1px;
+		width: 400px;
+		background-color: $white;
+		position: absolute;
+		top: 50%;
+	}
+
+	&:before {
+		left: 30px;
+	}
+
+	&:after {
+		right: 30px;
+	}
+}

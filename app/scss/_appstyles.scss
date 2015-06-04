@@ -1,2 +1,12 @@
 /* all app scss styles here */
-@import "base/general";
+// Helper
+@import 'helper';
+
+// Base
+@import 'base/general';
+
+// Layout
+@import 'layout/header';
+
+// Module
+@import 'module/navigation';

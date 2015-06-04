@@ -1,0 +1,40 @@
+/*------------------------------------------------------------------
+Header layout
+*/
+#site-header {
+	background-color: $oil;
+	background-image: url(../images/jumbotron.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-blend-mode: multiply;
+	background-size: cover;
+	height: 100%;
+	position: relative;
+}
+
+.jumbotron {
+	position: absolute;
+	width: 100%;
+	top: 50%;
+}
+
+.jumbotron__heading {
+	color: $white;
+	font-size: em(50);
+	text-transform: uppercase;
+}
+
+.jumbotron__description {
+	color: $primary-color;
+	font-size: em(15);
+	margin-bottom: em(100);
+	margin-right: auto;
+	margin-left: auto;
+	width: 50%;
+}
+
+
+.jumbotron__arrow-down {
+	color: $white;
+	font-size: em(50);
+}

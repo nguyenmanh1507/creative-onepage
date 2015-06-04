@@ -1,0 +1,25 @@
+// convert px to em
+@function em($pixels, $context: $rem-base) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+
+  @return $pixels / $context * 1em;
+}
+
+// padding
+.padding-large {
+	padding: em(80) 0;
+}
+
+.padding-medium {
+	padding: em(70) 0;
+}
+
+.padding-small {
+	padding: em(40) 0 em(70);
+}

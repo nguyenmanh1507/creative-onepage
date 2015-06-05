@@ -14,10 +14,11 @@ About Us
 	font-weight: 700;
 }
 
-// .tabs {
-// 	// border: 1px solid $steel;
-// 	// border-bottom: none;
-// }
+@media only screen and (max-width: 60.625rem) {
+	.tabs {
+		border: 1px solid $steel;
+	}
+}
 
 .tabs dd, 
 .tabs .tab-title {
@@ -36,6 +37,24 @@ About Us
 			
 		a {
 			box-shadow: inset 0 4px 0 $secondary-color;
+		}
+	}
+
+	@media only screen and (max-width: 60.625rem) {
+		border: none;
+
+		&:last-child {
+			border: none;
+		}
+	}
+
+	@media only screen and (max-width: 60.625rem) {
+		width: 100%;
+
+		&.active a {
+			background-color: $secondary-color;
+			box-shadow: none;
+			color: $white;
 		}
 	}
 }

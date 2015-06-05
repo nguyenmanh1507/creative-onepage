@@ -6278,6 +6278,10 @@ About Us
   margin: 0 0 1.25em;
   font-weight: 700; }
 
+@media only screen and (max-width: 60.625rem) {
+  .tabs {
+    border: 1px solid #868585; } }
+
 .tabs dd, .tabs .tab-title {
   width: 33.33%;
   text-align: center;
@@ -6290,6 +6294,18 @@ About Us
     border-bottom: none; }
     .tabs dd.active a, .tabs .tab-title.active a {
       box-shadow: inset 0 4px 0 #dd374d; }
+  @media only screen and (max-width: 60.625rem) {
+    .tabs dd, .tabs .tab-title {
+      border: none; }
+      .tabs dd:last-child, .tabs .tab-title:last-child {
+        border: none; } }
+  @media only screen and (max-width: 60.625rem) {
+    .tabs dd, .tabs .tab-title {
+      width: 100%; }
+      .tabs dd.active a, .tabs .tab-title.active a {
+        background-color: #dd374d;
+        box-shadow: none;
+        color: #FFFFFF; } }
 
 .tabs dd > a, .tabs .tab-title > a {
   background-color: #FFFFFF; }

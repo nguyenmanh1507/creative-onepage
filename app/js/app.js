@@ -21,7 +21,7 @@ var app = (function(document, $) {
 
 			// Detect browser unsupport css blend mode
 			if(typeof window.getComputedStyle(document.body).backgroundBlendMode == 'undefined') {
-			  document.documentElement.className += " no-background-blend-mode";
+			  document.documentElement.className += ' no-background-blend-mode';
 			}
 
 			// Filter portfolio

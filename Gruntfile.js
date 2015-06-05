@@ -37,7 +37,7 @@ module.exports = function(grunt) {
 					collapseWhitespace: true
 				},
 				files: {
-					'dist/index.html': 'app/index.html'
+					'dist/index.html': 'dist/index.html'
 				}
 			}
 		},
@@ -170,6 +170,6 @@ module.exports = function(grunt) {
 	grunt.registerTask('validate-js', ['jshint']);
 	grunt.registerTask('server-dist', ['connect:dist']);
 	
-	grunt.registerTask('publish', ['compile-sass', 'autoprefixer', 'htmlmin', 'clean:dist', 'validate-js', 'useminPrepare', 'copy:dist', 'newer:imagemin', 'concat', 'cssmin', 'uglify', 'usemin']);
+	grunt.registerTask('publish', ['compile-sass', 'autoprefixer', 'clean:dist', 'validate-js', 'useminPrepare', 'copy:dist', 'newer:imagemin', 'concat', 'cssmin', 'uglify', 'usemin']);
 
 };

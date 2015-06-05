@@ -6183,7 +6183,7 @@ video#bgvid {
   width: auto;
   height: auto;
   z-index: -100;
-  background: url(polina.jpg) no-repeat;
+  background: url(images/jumbotron.jpg) no-repeat;
   background-size: cover; }
 
 @keyframes upAndDown {
@@ -6213,10 +6213,15 @@ Intro Section
 Site Services
 */
 .site-services {
-  background: #333333 url(../images/services.jpg) no-repeat left top;
+  background-color: #333333;
+  background-image: url(../images/services.jpg);
+  background-repeat: no-repeat;
+  background-position: left top;
   background-blend-mode: multiply;
   background-size: cover;
   color: #FFFFFF; }
+  .no-background-blend-mode .site-services {
+    background-image: url(../images/services-dark.jpg); }
 
 .site-services__item {
   margin: 0 0 2.5em; }

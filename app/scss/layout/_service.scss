@@ -3,10 +3,17 @@ Site Services
 */
 
 .site-services {
-	background: $oil url(../images/services.jpg) no-repeat left top;
+	background-color: $oil;
+	background-image: url(../images/services.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
 	background-blend-mode: multiply;
 	background-size: cover;
 	color: $white;
+
+	.no-background-blend-mode & {
+		background-image: url(../images/services-dark.jpg);
+	}
 }
 
 .site-services__item {

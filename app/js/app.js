@@ -18,6 +18,12 @@ var app = (function(document, $) {
 			/*
 			Custom JS
 			*/
+
+			// Detect browser unsupport css blend mode
+			if(typeof window.getComputedStyle(document.body).backgroundBlendMode == 'undefined') {
+			  document.documentElement.className += " no-background-blend-mode";
+			}
+
 			// Filter portfolio
 			$('.portfolio').mixItUp();
 

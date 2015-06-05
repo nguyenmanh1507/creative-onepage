@@ -22,6 +22,10 @@ Header layout
 	color: $white;
 	font-size: em(50);
 	text-transform: uppercase;
+
+	@media only screen and (max-width: 33.75rem) {	
+		font-size: 1.875rem;
+	}
 }
 
 .jumbotron__description {
@@ -31,10 +35,26 @@ Header layout
 	margin-right: auto;
 	margin-left: auto;
 	width: 50%;
+
+	@media only screen and (max-width: 50rem) {
+		width: 80%;
+	}
+
+	@media only screen and (max-width: 33.75rem) {
+		font-size: 0.8125rem;
+	}
+
+	@media only screen and (max-height: 26.25rem) {
+		display: none;
+	}
 }
 
 
 .jumbotron__arrow-down {
 	color: $white;
 	font-size: em(50);
+
+	@media only screen and (max-width: 33.75rem) {
+		font-size: em(25);
+	}
 }

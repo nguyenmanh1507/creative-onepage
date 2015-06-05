@@ -2,6 +2,10 @@
 Main Navigation
 */		
 
+.top-bar {
+	height: 4.375rem;
+}
+
 // top bar li bg
 .top-bar-section ul li {
 	background: transparent;
@@ -33,6 +37,28 @@ Main Navigation
 	.top-bar-section li:not(.has-form) a:not(.button) {
 		padding-top: 2em;
 		text-transform: uppercase;
+	}
+
+}
+
+@media only screen and (max-width: 40em) { 
+
+	.top-bar-section ul {
+		background-color: $secondary-color;
+		position: relative;
+		z-index: 100;
+		text-align: center;
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+
+	.top-bar-section ul li > a {
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+
+	.top-bar-section ul li.active > a {
+		background-color: darken($secondary-color, 10%);
 	}
 
 }

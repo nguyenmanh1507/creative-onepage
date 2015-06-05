@@ -4,49 +4,71 @@ MISC
 
 // Horizontal
 .site-hr {
-	border-radius: 50%;
-	border: 1px solid $white;
-	line-height: 22px;
-	font-size: 11px;
-	margin: 0 auto;
-	position: relative;
-	height: 22px;
-	width: 21px;
+	text-align: center;
+	margin: 1.25rem 0; //20px
 
-	&.site-hr--a {
-		margin-top: 1.25rem; //20px
-		margin-bottom: 1.25rem;
+	.site-hr__a,
+	.site-hr__b,
+	.site-hr__c {
+		display: inline-block;
+	}
+
+	.site-hr__a,
+	.site-hr__c {
+		width: 400px;
+		height: 1px;
+		background-color: $white;
+		position: relative;
+		top: -6px;
+	}
+
+	.site-hr__b {
+		border: 1px solid $white;
+		border-radius: 50%;
+		height: 22px;
+		width: 22px;
+		font-size: 11px;
+		line-height: 22px;
 		color: $secondary-color;
 	}
 
 	&.site-hr--b {
-		margin-top: 1.25rem; //20px
-		margin-bottom: 1.25rem; //20px
-		border-color: #d8d8d8;
-		color: $secondary-color;
 
-		&:before,
-		&:after {
+		.site-hr__a,
+		.site-hr__c {
 			background-color: #d8d8d8;
+		}
+
+		.site-hr__b {
+			border-color: #d8d8d8;
 		}
 	}
 
-	&:before,
-	&:after {
-		content: '';
-		height: 1px;
-		width: 400px;
-		background-color: $white;
-		position: absolute;
-		top: 50%;
+	&.site-hr--c {
+
+		.site-hr__b {
+			color: $white;
+		}
 	}
 
-	&:before {
-		left: 30px;
+	@media only screen and (max-width: 56.25rem) {
+
+		padding: 0 15px;
+
+		.site-hr__a,
+		.site-hr__c {
+			width: 45%;
+		}
+
 	}
 
-	&:after {
-		right: 30px;
+	@media only screen and (max-width: 20.75rem) {
+		
+		.site-hr__a,
+		.site-hr__c {
+			width: 30%;
+		}
+
 	}
 }
 

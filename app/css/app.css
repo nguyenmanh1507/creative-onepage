@@ -6382,6 +6382,24 @@ Porfolio
       .filter-control button:last-child:after {
         content: ''; }
 
+.funfact {
+  padding: 5em 0 0;
+  text-align: center; }
+  .funfact .fa, .funfact .funfact__number {
+    color: #8a8a8a;
+    line-height: 1; }
+  .funfact .fa {
+    font-size: 2.5rem; }
+  .funfact .funfact__title {
+    color: #dd374d;
+    font-style: italic;
+    margin: 0.625em 0; }
+  .funfact .funfact__number {
+    font-size: 3.75rem;
+    font-weight: 700; }
+  .funfact .fa, .funfact .funfact__title, .funfact .funfact__number {
+    display: block; }
+
 /*------------------------------------------------------------------
 Main Navigation
 */

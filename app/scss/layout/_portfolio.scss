@@ -15,17 +15,13 @@ Porfolio
 		margin: 0 auto 7%;
 		position: relative;
 		transition: all .3s ease-in;
+		overflow: hidden;
 
 		&:hover {
 
-			&:after {
-				content: '';
-				position: absolute;
-				top: 0;
-				left: 0;
-				right: 0;
-				bottom: 0;
-				background-color: rgba(0, 0, 0, .5);
+			figcaption {
+				opacity: 1;
+				transform: translateY(0);
 			}
 		}
 
@@ -34,12 +30,38 @@ Porfolio
 		}
 
 		figcaption {
+			background-color: $oil;
+			background: linear-gradient(to top, rgba($oil, 0.8) 0%,rgba(0, 0, 0, 0) 100%); 
 			position: absolute;
 			left: 0;
-			top: 50%;
-			width: 100%;
+			top: 0;
+			right: 0;
+			bottom: 0;
 			text-align: center;
+			cursor: pointer;
 			opacity: 0;
+			transform: translateY(40%);
+			transition: all .3s ease-in;
+
+			a {
+				color: $white;
+				transition: color .3s ease-in;
+
+				&:hover {
+					color: $primary-color;
+				}
+			}
+
+			h1, h2, h3, h4, h5, h6 {
+				font-size: 1.125rem; //18px
+				text-transform: uppercase;
+				margin: 35% 0 0;
+			}
+
+			small, p {
+				font-size: 0.875rem; //14px
+				margin: 0;
+			}
 		}
 	}
 }

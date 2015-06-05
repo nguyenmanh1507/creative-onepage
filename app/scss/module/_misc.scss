@@ -49,3 +49,20 @@ MISC
 		right: 30px;
 	}
 }
+
+.big-intro.big-intro--a {
+	background-color: $secondary-color;
+
+	.big-intro__heading {
+		color: $white;
+		font-size: 2.5rem; //40px
+	}
+
+	.site-hr.site-hr--a {
+		color: $white;
+	}
+
+	p {
+		color: $white;
+	}
+}

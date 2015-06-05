@@ -1,0 +1,53 @@
+/*------------------------------------------------------------------
+Footer
+*/
+
+#footer {
+	background-color: $tuatara;
+	padding: em(30);
+}
+
+.social-list {
+	text-align: center;
+
+	li {
+		display: inline-block;
+		float: none;
+		margin: 0;
+		padding: 0 0.9375rem;
+
+		a {
+			border: 1px solid $white;
+			border-radius: 50%;
+			color: $white;
+			line-height: 30px;
+			height: 30px;
+			width: 30px	;
+			transition: all .3s ease-in;
+
+			&:hover {
+				color: $tuatara;
+				background-color: $white;
+			}
+		}
+	}
+}
+
+.copyright-info {
+	color: $white;
+	font-size: 12px;
+	margin: 0;
+
+	a {
+		color: $white;
+		transition: color .3s ease-in;
+
+		&:hover {
+			color: $primary-color;
+		}
+	}
+
+	em {
+		display: block;
+	}
+}

@@ -6130,9 +6130,7 @@ Header layout
 */
 #site-header {
   background-color: #333333;
-  background-image: url(../images/jumbotron.jpg);
-  background-repeat: no-repeat;
-  background-position: left top;
+  background-color: rgba(51, 51, 51, 0.8);
   background-blend-mode: multiply;
   background-size: cover;
   height: 100%;
@@ -6170,10 +6168,30 @@ Header layout
 
 .jumbotron__arrow-down {
   color: #FFFFFF;
-  font-size: 3.125em; }
+  font-size: 3.125em;
+  animation: upAndDown 1s ease-in infinite; }
   @media only screen and (max-width: 33.75rem) {
     .jumbotron__arrow-down {
       font-size: 1.5625em; } }
+
+video#bgvid {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  background: url(polina.jpg) no-repeat;
+  background-size: cover; }
+
+@keyframes upAndDown {
+  0%, 100% {
+    transform: translateY(0); }
+
+  70% {
+    transform: translateY(10px); } }
 
 /*------------------------------------------------------------------
 Intro Section
@@ -6318,46 +6336,48 @@ About Us
 /*------------------------------------------------------------------
 Porfolio
 */
-.portfolio .column + .column:last-child, .portfolio .columns + .columns:last-child {
-  float: left; }
-.portfolio figure {
-  margin: 0;
-  max-width: 377px;
-  width: 100%;
-  margin: 0 auto 7%;
-  position: relative;
-  transition: all .3s ease-in;
-  overflow: hidden; }
-  .portfolio figure:hover figcaption {
-    opacity: 1;
-    transform: translateY(0); }
-  .portfolio figure > a {
-    display: block; }
-  .portfolio figure figcaption {
-    background-color: #333333;
-    background: linear-gradient(to top, rgba(51, 51, 51, 0.8) 0%, transparent 100%);
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    text-align: center;
-    cursor: pointer;
-    opacity: 0;
-    transform: translateY(40%);
-    transition: all .3s ease-in; }
-    .portfolio figure figcaption a {
-      color: #FFFFFF;
-      transition: color .3s ease-in; }
-      .portfolio figure figcaption a:hover {
-        color: #ff9900; }
-    .portfolio figure figcaption h1, .portfolio figure figcaption h2, .portfolio figure figcaption h3, .portfolio figure figcaption h4, .portfolio figure figcaption h5, .portfolio figure figcaption h6 {
-      font-size: 1.125rem;
-      text-transform: uppercase;
-      margin: 35% 0 0; }
-    .portfolio figure figcaption small, .portfolio figure figcaption p {
-      font-size: 0.875rem;
-      margin: 0; }
+.portfolio {
+  background-color: #FFFFFF; }
+  .portfolio .column + .column:last-child, .portfolio .columns + .columns:last-child {
+    float: left; }
+  .portfolio figure {
+    margin: 0;
+    max-width: 377px;
+    width: 100%;
+    margin: 0 auto 7%;
+    position: relative;
+    transition: all .3s ease-in;
+    overflow: hidden; }
+    .portfolio figure:hover figcaption {
+      opacity: 1;
+      transform: translateY(0); }
+    .portfolio figure > a {
+      display: block; }
+    .portfolio figure figcaption {
+      background-color: #333333;
+      background: linear-gradient(to top, rgba(51, 51, 51, 0.8) 0%, transparent 100%);
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      text-align: center;
+      cursor: pointer;
+      opacity: 0;
+      transform: translateY(40%);
+      transition: all .3s ease-in; }
+      .portfolio figure figcaption a {
+        color: #FFFFFF;
+        transition: color .3s ease-in; }
+        .portfolio figure figcaption a:hover {
+          color: #ff9900; }
+      .portfolio figure figcaption h1, .portfolio figure figcaption h2, .portfolio figure figcaption h3, .portfolio figure figcaption h4, .portfolio figure figcaption h5, .portfolio figure figcaption h6 {
+        font-size: 1.125rem;
+        text-transform: uppercase;
+        margin: 35% 0 0; }
+      .portfolio figure figcaption small, .portfolio figure figcaption p {
+        font-size: 0.875rem;
+        margin: 0; }
 
 .big-intro {
   background-color: #EEEEEE; }
@@ -6543,3 +6563,32 @@ MISC
     color: #FFFFFF; }
   .big-intro.big-intro--a p {
     color: #FFFFFF; }
+
+#scroll-to-top {
+  text-align: center;
+  display: block;
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  font-size: 30px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: rgba(238, 238, 238, 0.5);
+  color: #dd374d;
+  line-height: 50px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .5s ease-in; }
+  #scroll-to-top.is-visible {
+    opacity: 1;
+    visibility: visible; }
+  #scroll-to-top i.fa {
+    animation: spin 2s linear infinite; }
+
+@keyframes spin {
+  from {
+    transform: rotateY(0deg); }
+
+  to {
+    transform: rotateY(360deg); } }

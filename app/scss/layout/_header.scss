@@ -3,9 +3,10 @@ Header layout
 */
 #site-header {
 	background-color: $oil;
-	background-image: url(../images/jumbotron.jpg);
-	background-repeat: no-repeat;
-	background-position: left top;
+	background-color: rgba($oil, .8);
+	// background-image: url(../images/jumbotron.jpg);
+	// background-repeat: no-repeat;
+	// background-position: left top;
 	background-blend-mode: multiply;
 	background-size: cover;
 	height: 100%;
@@ -53,8 +54,35 @@ Header layout
 .jumbotron__arrow-down {
 	color: $white;
 	font-size: em(50);
+	animation: upAndDown 1s ease-in infinite;
 
 	@media only screen and (max-width: 33.75rem) {
 		font-size: em(25);
+	}
+}
+
+// Video Background
+video#bgvid {
+	position: fixed;
+	top: 0;
+	left: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -100;
+	// -webkit-transform: translateX(-50%) translateY(-50%);
+	// transform: translateX(-50%) translateY(-50%);
+	background: url(polina.jpg) no-repeat;
+	background-size: cover;
+}
+
+@keyframes upAndDown {
+	0%, 100% {
+		transform: translateY(0);
+	}
+
+	70% {
+		transform: translateY(10px);
 	}
 }

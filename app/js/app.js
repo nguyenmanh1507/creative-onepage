@@ -21,20 +21,36 @@ var app = (function(document, $) {
 			// Filter portfolio
 			$('.portfolio').mixItUp();
 
-			// Simple smooth scroll function
-			var smoothScroll = function() {
-
-			}
-
 			// Simple Smooth scroll
 			var link = $('.jumbotron__arrow-down, .top-bar-section a');
+			var duration = 800;
+
 			link.on('click', function() {
 				var target = $(this).attr('href');
 
 				$('html, body').animate({
 					scrollTop: $(target).offset().top
-				}, 800);
+				}, duration);
 
+				return false;
+			});
+
+			// Scroll to top
+			var scrollToTop = $('#scroll-to-top');
+			var checkPoint = $('#site-intro').offset().top;
+
+			$(window).scroll(function() {
+				if ($(this).scrollTop() > checkPoint) {
+					scrollToTop.addClass('is-visible');
+				} else {
+					scrollToTop.removeClass('is-visible');
+				} 
+			});
+
+			scrollToTop.on('click', function() {
+				$('html, body').animate({
+					scrollTop: 0
+				}, duration);
 				return false;
 			});
 

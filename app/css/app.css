@@ -6141,7 +6141,7 @@ Header layout
 .jumbotron {
   position: absolute;
   width: 100%;
-  top: 50%; }
+  top: 38%; }
 
 .jumbotron__heading {
   color: #FFFFFF;
@@ -6151,7 +6151,7 @@ Header layout
 .jumbotron__description {
   color: #ff9900;
   font-size: 0.9375em;
-  margin-bottom: 6.25em;
+  margin-bottom: 4%;
   margin-right: auto;
   margin-left: auto;
   width: 50%; }

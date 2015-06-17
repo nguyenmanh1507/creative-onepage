@@ -3811,7 +3811,7 @@ Porfolio
       .portfolio figure figcaption h1, .portfolio figure figcaption h2, .portfolio figure figcaption h3, .portfolio figure figcaption h4, .portfolio figure figcaption h5, .portfolio figure figcaption h6 {
         font-size: 1.125rem;
         text-transform: uppercase;
-        margin: 35% 0 0; }
+        margin: 35% 0 5%; }
       .portfolio figure figcaption small, .portfolio figure figcaption p {
         font-size: 0.875rem;
         margin: 0; }

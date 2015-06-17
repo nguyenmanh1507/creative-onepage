@@ -2,6 +2,9 @@
   "name": "zf5_project",
   "dependencies": {
     "foundation": "zurb/bower-foundation",
-    "font-awesome": "~4.3.0" 
+    "font-awesome": "~4.3.0"
+  },
+  "devDependencies": {
+    "waypoints": "~3.1.1"
   }
 }

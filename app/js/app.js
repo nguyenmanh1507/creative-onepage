@@ -60,6 +60,11 @@ var app = (function(document, $) {
 				return false;
 			});
 
+			$('.counter').counterUp({
+        delay: 10,
+        time: 2000
+      });
+
 			/*
 			End Custom JS
 			*/

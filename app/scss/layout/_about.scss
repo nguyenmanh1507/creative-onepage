@@ -20,9 +20,17 @@ About Us
 	}
 }
 
+.tabs {
+	display: flex;
+
+	@media only screen and (max-width: 33.75rem) {
+		display: block;
+	}
+}
+
 .tabs dd, 
 .tabs .tab-title {
-	width: 33.33%;
+	flex: 1;
 	text-align: center;
 	border: 1px solid $steel;
 	border-right: none;
@@ -51,17 +59,26 @@ About Us
 	@media only screen and (max-width: 60.625rem) {
 		width: 100%;
 
-		&.active a {
+		&.active {
 			background-color: $secondary-color;
-			box-shadow: none;
-			color: $white;
-		}
+			
+			a {
+				background-color: $secondary-color;
+				box-shadow: none;
+				color: $white;
+			}
+		} 
 	}
 }
 
 .tabs dd > a, 
 .tabs .tab-title > a {
 	background-color: $white;
+	padding: 1rem 0;
+
+	&:hover {
+		background-color: transparent;
+	}
 }
 
 .tabs-content {

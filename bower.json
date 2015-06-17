@@ -5,6 +5,7 @@
     "font-awesome": "~4.3.0"
   },
   "devDependencies": {
-    "waypoints": "~3.1.1"
+    "waypoints": "~3.1.1",
+    "counter-up": "~1.0.0"
   }
 }

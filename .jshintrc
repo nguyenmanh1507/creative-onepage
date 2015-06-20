@@ -4,7 +4,7 @@
 	"eqnull": true,
 	"eqeqeq": true,
 	"undef": true,
-	"unused": true,
+	"unused": false,
 	"indent": 4,
 	"trailing": true,
 	"browser": true,
@@ -13,6 +13,7 @@
 	"quotmark": "single",
 	"globals": {
 		"jQuery": false,
-		"$": false
+		"$": false,
+		"WOW": false
 	}
 }

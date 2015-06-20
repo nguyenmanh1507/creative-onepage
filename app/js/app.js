@@ -60,6 +60,13 @@ var app = (function(document, $) {
 				return false;
 			});
 
+			// Wow!!!
+			var wow = new WOW({
+				mobile: false,
+				offset: 100
+			});
+
+			wow.init();
 
 			// animate skill
 			var skill = $('#skills');

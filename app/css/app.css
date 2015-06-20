@@ -3769,6 +3769,9 @@ About Us
 .about-specs .progress {
   height: 4px;
   padding: 0; }
+  .about-specs .progress .meter {
+    width: 0;
+    transition: width 2s ease-in; }
 
 /*------------------------------------------------------------------
 Porfolio

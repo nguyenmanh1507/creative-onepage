@@ -292,14 +292,14 @@
             
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore aliquam officiis facilis, similique excepturi nisi saepe totam temporibus natus, deleniti doloremque mollitia, alias optio quibusdam? Earum nostrum ratione, eius voluptate nihil quos aliquam? Distinctio.</p>
 
-            <ul class="no-bullet">
+            <ul id="skills" class="no-bullet">
               <li>
 
                 <div class="about-specs__skill">
                   <span class="about-specs__skill__title">Web Development</span>
-                  <span class="right"><span class="counter">80</span>%</span>
+                  <span class="right"><span class="skill-number counter" data-number="80"></span>%</span>
                   <div class="progress secondary">
-                    <span class="meter" style="width: 80%"></span>
+                    <span class="meter"></span>
                   </div>
                 </div>
 
@@ -308,9 +308,9 @@
                 
                 <div class="about-specs__skill">
                   <span class="about-specs__skill__title">Visual Designs</span>
-                  <span class="right"><span class="counter">90</span>%</span>
+                  <span class="right"><span class="skill-number counter" data-number="90"></span>%</span>
                   <div class="progress secondary">
-                    <span class="meter" style="width: 90%"></span>
+                    <span class="meter"></span>
                   </div>
                 </div>
 
@@ -319,9 +319,9 @@
                 
                 <div class="about-specs__skill">
                   <span class="about-specs__skill__title">Internet Marketing</span>
-                  <span class="right"><span class="counter">70</span>%</span>
+                  <span class="right"><span class="skill-number counter" data-number="70"></span>%</span>
                   <div class="progress secondary">
-                    <span class="meter" style="width: 70%"></span>
+                    <span class="meter"></span>
                   </div>
                 </div>
 
@@ -330,9 +330,9 @@
                 
                 <div class="about-specs__skill">
                   <span class="about-specs__skill__title">Wireframing</span>
-                  <span class="right"><span class="counter">88</span>%</span>
+                  <span class="right"><span class="skill-number counter" data-number="88"></span>%</span>
                   <div class="progress secondary">
-                    <span class="meter" style="width: 88%"></span>
+                    <span class="meter"></span>
                   </div>
                 </div>
 
@@ -446,13 +446,13 @@
       </div>
       <!-- /.row -->
 
-      <div class="row">
+      <div id="funfact" class="row">
         <div class="medium-3 columns">
           
           <div class="funfact">
             <i class="fa fa-thumbs-o-up"></i>
             <span class="funfact__title">Complete Projects</span>
-            <span class="funfact__number counter">195</span>
+            <span class="funfact__number counter" data-number="195"></span>
           </div>
           <!-- /.funfact -->
 
@@ -462,7 +462,7 @@
           <div class="funfact">
             <i class="fa fa-diamond"></i>
             <span class="funfact__title">Adwards Received</span>
-            <span class="funfact__number  counter">27</span>
+            <span class="funfact__number counter" data-number="27"></span>
           </div>
           <!-- /.funfact -->
 
@@ -472,7 +472,7 @@
           <div class="funfact">
             <i class="fa fa-smile-o"></i>
             <span class="funfact__title">Happy Customers</span>
-            <span class="funfact__number  counter">950</span>
+            <span class="funfact__number counter" data-number="950"></span>
           </div>
           <!-- /.funfact -->
 
@@ -482,7 +482,7 @@
           <div class="funfact">
             <i class="fa fa-coffee"></i>
             <span class="funfact__title">Cup of Coffe</span>
-            <span class="funfact__number  counter">510</span>
+            <span class="funfact__number counter" data-number="510"></span>
           </div>
           <!-- /.funfact -->
 
@@ -587,7 +587,9 @@
     <script src="bower_components/foundation/js/foundation/foundation.tooltip.js"></script>
     <script src="bower_components/foundation/js/foundation/foundation.topbar.js"></script>
     <script src="bower_components/mixitup2/build/jquery.mixitup.min.js"></script>
+    <script src="bower_components/WOW/dist/wow.js"></script>
     <script src="bower_components/waypoints/lib/jquery.waypoints.js"></script>
+    <script src="bower_components/jquery-animatenumber/jquery.animateNumber.js"></script>
     <!-- endbuild -->
     <!-- googlemap -->
     <script src="https://maps.googleapis.com/maps/api/js?id=AIzaSyBsykYZjVvMeDFSCe5dO2EvHvz8tZoKtYk&amp;signed_in=true"></script>

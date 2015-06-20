@@ -60,6 +60,46 @@ var app = (function(document, $) {
 				return false;
 			});
 
+
+			// animate skill
+			var skill = $('#skills');
+
+			// animate funfact number
+			var funfact = $('#funfact');
+
+			var countUp = function(selector) {
+
+				selector.find('.counter').each(function() {
+
+					var $t = $(this);
+
+					var waypoint = $t.waypoint({
+						handler: function(direction) {
+
+							if(direction === 'down' && $t.hasClass('counter')) {
+
+								$t.closest('div').find('.meter').css('width', $t.data('number') + '%');
+
+								$t.animateNumber({
+									number: $t.data('number')
+								}, 2000);
+
+								$t.removeClass('counter');
+
+							}
+
+						},
+						offset: 'bottom-in-view'
+					});
+
+				});
+
+			};
+
+			countUp(skill);
+			countUp(funfact);
+
+
 			/*
 			End Custom JS
 			*/

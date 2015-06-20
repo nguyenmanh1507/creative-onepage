@@ -143,5 +143,10 @@ About Us
 	.progress {
 		height: 4px;
 		padding: 0;
+
+		.meter {
+			width: 0;
+			transition: width 2s ease-in;
+		}
 	}
 }

@@ -115,6 +115,7 @@ var app = (function(document, $) {
 					url: '//formspree.io/nguyenmanh1507@gmail.com',
 					method: 'POST',
 					data: {
+						name: $('#cf-name').val(),
 						email: $('#cf-email').val(),
 						message: $('#cf-message').val()
 					},

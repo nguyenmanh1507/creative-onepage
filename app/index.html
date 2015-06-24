@@ -521,6 +521,8 @@
 
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus corporis, rem quasi, assumenda, sequi impedit ipsum veritatis quia</p>
 
+        <a href="#" class="form-modal" data-reveal-id="form-modal"><i class="fa fa-envelope"></i></a>
+
       </section>
       <!-- /.big-intro -->
 
@@ -560,6 +562,40 @@
 
     <!-- Scroll To Top -->
     <a href="#" id="scroll-to-top"><i class="fa fa-arrow-up"></i></a>
+
+    <!-- Modal Window -->
+    <div id="form-modal" class="reveal-modal medium" data-reveal aria-labelledby="Contact Form" aria-hidden="true" role="contact form">
+      <div class="content-wrap">
+        <h2 id="modalTitle">Contact with Us!</h2>
+        <form action="//formspree.io/nguyenmanh1507@gmail.com" method="POST" class="cf">
+          <div class="row">
+            <div class="small-12 columns">
+              <label for="cf-name">Your name</label>
+              <input type="text" class="cf__field" id="cf-name" name="cf-name" placeholder="Enter your name">
+            </div>
+          </div>
+          <div class="row">
+            <div class="small-12 columns">
+              <label for="cf-email">Your email</label>
+              <input type="email" class="cf__field" id="cf-email" name="_replyto" placeholder="Enter your email">
+            </div>
+          </div>
+          <div class="row">
+            <div class="small-12 columns">
+              <label for="cf-message">Message</label>
+              <textarea class="cf__field cf__field--height" name="_subject" id="cf-message" placeholder="Send us your message"></textarea>
+            </div>
+          </div>
+          <input type="text" class="hidden" name="_gotcha">
+          <div class="row">
+            <div class="small-12 columns text-center">
+              <input type="submit" class="button radius" value="Send">
+            </div>
+          </div>
+        </form>
+        <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+      </div>
+    </div>
 
 
     <!-- build:js js/vendor/libraries.min.js -->

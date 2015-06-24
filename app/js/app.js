@@ -106,6 +106,34 @@ var app = (function(document, $) {
 			countUp(skill);
 			countUp(funfact);
 
+			// Ajax contact form
+			var contactForm = $('#contact-form');
+			var formWrap = contactForm.closest('.content-wrap');
+
+			contactForm.submit(function() {
+				$.ajax({
+					url: '//formspree.io/nguyenmanh1507@gmail.com',
+					method: 'POST',
+					data: {
+						email: $('#cf-email').val(),
+						message: $('#cf-message').val()
+					},
+					beforeSend: function() {
+						formWrap.addClass('is-submit');
+					},
+					success: function() {
+						formWrap.removeClass('is-submit');
+						contactForm.hide();
+						$('#modalTitle').text('Thank you! I\'ll reply you soon.');
+						window.setTimeout(function() {
+							$('.close-reveal-modal').click();
+						}, 2500);
+					},
+					dataType: 'json'
+				});
+				return false;
+			});
+
 
 			/*
 			End Custom JS

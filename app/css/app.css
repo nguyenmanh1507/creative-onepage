@@ -4039,7 +4039,19 @@ Contact
 .content-wrap {
   background-color: white;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
-  padding: 0.625rem; }
+  padding: 0.625rem;
+  position: relative; }
+  .content-wrap.is-submit input, .content-wrap.is-submit textarea, .content-wrap.is-submit label {
+    visibility: hidden; }
+  .content-wrap.is-submit svg {
+    visibility: visible; }
+  .content-wrap svg {
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px; }
 
 #modalTitle {
   font-family: "Roboto Slab", Cambria, "Times New Roman", Times, serif; }

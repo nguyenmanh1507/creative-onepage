@@ -13,4 +13,4 @@
 * waypoints
 * animate.css
 
-## <a href="http://nguyenmanh1507.github.io/creative-onepage/dist/">Demo page</a>
+## <a href="http://nguyenmanh1507.github.io/creative-onepage/dist/" target="_blank">Demo page</a>

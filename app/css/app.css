@@ -4010,25 +4010,20 @@ Contact
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   line-height: 1; }
   .form-modal:hover, .form-modal:focus {
-    -webkit-animation: sake .5s linear infinite;
-            animation: sake .5s linear infinite;
+    animation: sake .5s linear infinite;
     color: #FFFFFF; }
 
 @-webkit-keyframes sake {
   0%, 20%, 80%, 100% {
-    -webkit-transform: translateX(-5px);
-            transform: translateX(-5px); }
+    transform: translateX(-5px); }
 
   40%, 70% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0); }
+    transform: translateX(0); }
 
   10%, 30%, 50%, 90% {
-    -webkit-transform: translateX(5px);
-            transform: translateX(5px); } }
+    transform: translateX(5px); } }
 
 #form-modal {
-  background-image: -webkit-repeating-linear-gradient(135deg, white, white 15px, #80B3FF 15px, #80B3FF 30px, #dd374d 30px, #dd374d 45px);
   background-image: repeating-linear-gradient(-45deg, white, white 15px, #80B3FF 15px, #80B3FF 30px, #dd374d 30px, #dd374d 45px);
   padding: 1em;
   border: none;
@@ -4037,8 +4032,7 @@ Contact
     font-family: "Roboto Slab", Cambria, "Times New Roman", Times, serif; }
   #form-modal .button {
     background-color: #80B3FF;
-    -webkit-transition: all .3s ease-in;
-            transition: all .3s ease-in; }
+    transition: all .3s ease-in; }
     #form-modal .button:hover {
       background-color: #4d94ff; }
 
@@ -4053,8 +4047,7 @@ Contact
 input.cf__field, textarea.cf__field {
   border-radius: 5px;
   border-color: #80B3FF;
-  -webkit-transition: all .3s ease-in;
-          transition: all .3s ease-in; }
+  transition: all .3s ease-in; }
   input.cf__field:hover, input.cf__field:focus, textarea.cf__field:hover, textarea.cf__field:focus {
     background-color: #80B3FF;
     border-color: #80B3FF;

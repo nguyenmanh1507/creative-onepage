@@ -7,3 +7,96 @@ Contact
 	width: 100%;
 }
 
+.form-modal {
+	display: inline-block;
+	margin-top: 40px;
+	font-size: 50px;
+	color: $white;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+	line-height: 1;
+
+	&:hover,
+	&:focus {
+		animation: sake .5s linear infinite;;
+		color: $white;
+	}
+}
+
+@-webkit-keyframes sake {
+	0%, 20%, 80%, 100% {
+		transform: translateX(-5px);
+	}
+
+	40%, 70% {
+		transform: translateX(0);
+	}
+
+	10%, 30%, 50%, 90% {
+		transform: translateX(5px);
+	}
+}
+
+#form-modal {
+	background-image: repeating-linear-gradient(-45deg, white, white 15px, #80B3FF 15px, #80B3FF 30px, $secondary-color 30px, $secondary-color 45px);
+	padding: 1em;
+	border: none;
+	box-shadow: none;
+
+	label, 
+	input {
+		font-family: $font-family-serif;
+	}
+
+	.button {
+		background-color: #80B3FF;
+		transition: all .3s ease-in;
+
+		&:hover {
+			background-color: darken(#80B3FF, 10%);
+		}
+	}
+}
+
+.content-wrap {
+	background-color: white;
+	box-shadow: 0 0 4px rgba(black, .5);
+	padding: 0.625rem;
+}
+
+#modalTitle {
+	font-family: $font-family-serif;
+}
+
+input.cf__field,
+textarea.cf__field {
+	border-radius: 5px;
+	border-color: #80B3FF;
+	transition: all .3s ease-in;
+
+	&:hover,
+	&:focus {
+		background-color: #80B3FF;
+		border-color: #80B3FF;
+		color: white;
+	}
+
+	&--height {
+		height: 100px;
+	}
+}
+
+::-webkit-input-placeholder {
+   color: white;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: white;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: white;  
+}
+
+:-ms-input-placeholder {  
+   color: white;  
+}

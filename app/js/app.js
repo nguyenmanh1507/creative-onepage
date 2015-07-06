@@ -128,7 +128,7 @@ var app = (function(document, $) {
 						$('#modalTitle').text('Thank you! I\'ll reply you soon.');
 						window.setTimeout(function() {
 							$('.close-reveal-modal').click();
-						}, 2500);
+						}, 2000);
 					},
 					dataType: 'json'
 				});
